@@ -20,17 +20,7 @@ function App() {
       {/* <UseTransitionExample /> */}
       {/* <YouWon /> */}
     </>
-    
   );
-
-  return (
-    <>
-      <div>
-        {/* <AnimatedDialogDemo /> */}
-        <DialogDemo />
-      </div>
-    </>
-  )
 }
 
 export default App
