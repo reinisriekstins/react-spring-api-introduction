@@ -18,8 +18,18 @@ const YouWon = () => {
       <Heading mb="2" size="4">You won!</Heading>
 
       <AnimatedHeading mb="2" size="7">
-        {/* {amount} */}
-        {amount.to(amountNumber => `${Math.floor(amountNumber)} €`)}
+        {/* 
+          #1. The consumed spring value can be not only style properties,
+          but also any prop that accepts a numeric value and also "children".
+        */}
+        {amount}
+
+        {/*
+          #2. To transform any numeric spring value and add any
+          formatting to it you can use the .to(...) method.
+          In this case we're removing decimal digits and adding the "€" symbol.
+        */}
+        {/* {amount.to(amountNumber => `${Math.floor(amountNumber)} €`)} */}
       </AnimatedHeading>
 
     </div>

@@ -1,10 +1,10 @@
 import React from 'react'
 import { useState } from "react";
-import HistorySidepanel from "../HistorySidepanel";
+import AnimatedHistorySidepanel from "../HistorySidepanel/AnimatedHistorySidepanel";
 import MusicPlayerPage from '../pages/MusicPlayer';
 import { animated, useTransition } from '@react-spring/web';
 
-const UseTransitionExample = () => {
+const UseTransitionListExample = () => {
   const [sideMenuOpen, setSideMenuOpen] = useState(false);
 
   const transition = useTransition(sideMenuOpen, {
@@ -33,7 +33,7 @@ const UseTransitionExample = () => {
                 ...style
               }}
             >
-              <HistorySidepanel
+              <AnimatedHistorySidepanel
                 onCloseClick={() => setSideMenuOpen(false)}
               />
             </animated.div>
@@ -44,4 +44,4 @@ const UseTransitionExample = () => {
   );
 }
 
-export default UseTransitionExample;
+export default UseTransitionListExample;

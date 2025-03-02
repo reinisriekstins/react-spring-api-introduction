@@ -7,7 +7,14 @@ import { useSpring, animated } from '@react-spring/web';
 const BasicUseSpringExample = () => {
   const [sideMenuOpen, setSideMenuOpen] = useState(false);
 
+  // #1. add the useSpring hook
   const style = useSpring({
+    // #2. add any style properties that you want
+    // to change based on state, and specify each value
+    // that corresponds to a specific state. In this case
+    // the sidepanel of width 400px will slide in from
+    // the right side, so we hide it 400 px farther than the 
+    // right side of the page.
     right: sideMenuOpen ? 0 : -400,
   })
 
@@ -17,7 +24,7 @@ const BasicUseSpringExample = () => {
         onHistoryButtonClick={() => setSideMenuOpen(true)}
       />
 
-      {/* @ts-expect-error weird TS error */}
+      {/* @ts-expect-error animated.div */}
       <animated.div
         style={{
           position: 'fixed',
@@ -25,6 +32,7 @@ const BasicUseSpringExample = () => {
           bottom: 0,
           width: 400,
           display: 'grid',
+          //
           ...style
         }}
       >

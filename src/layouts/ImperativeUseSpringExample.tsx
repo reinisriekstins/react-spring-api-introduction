@@ -21,6 +21,7 @@ const ImperativeUseSpringExample = () => {
         onHistoryButtonClick={() => setSideMenuOpen(true)}
       />
 
+      {/* @ts-expect-error animated.div */}
       <animated.div
         style={{
           position: 'fixed',
