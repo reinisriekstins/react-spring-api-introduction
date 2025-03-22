@@ -5,14 +5,14 @@ import DialogDemo from './Dialog'
 import AnimatedDialogDemo from './Dialog/AnimatedDialog'
 import "@radix-ui/themes/styles.css";
 import './App.css'
-import NonAnimatedMusicPage from './layouts/NonAnimatedMusicPage'
-import BasicUseSpringExample from './layouts/BasicUseSpringExample'
-import ImperativeUseSpringExample from './layouts/ImperativeUseSpringExample'
-import UseTransitionExample from './layouts/UseTransitionExample'
-import YouWon from './layouts/YouWon'
-import UseTransitionListExample from './layouts/UseTransitionListExample'
-function App() {
+import NonAnimatedMusicPage from './layouts/NonAnimatedMusicPage';
+import BasicUseSpringExample from './layouts/BasicUseSpringExample';
+import ImperativeUseSpringExample from './layouts/ImperativeUseSpringExample';
+import UseTransitionExample from './layouts/UseTransitionExample';
+import YouWon from './layouts/YouWon';
+import UseTransitionListExample from './layouts/UseTransitionListExample';
 
+function App() {
   return (
     <>
       <NonAnimatedMusicPage />
