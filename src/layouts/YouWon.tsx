@@ -43,7 +43,11 @@ const YouWon = () => {
         */}
         {/* {amount.to(amountNumber => `${Math.floor(amountNumber)} €`)} */}
 
-        {/* #5. Merge output from multiple springs into one */}
+        {/*
+          #5. Merge output from multiple springs into one.
+          Super useful in cases like:
+          `transform: translateY(${mouseXSpring + scrollYSpring}px) rotate(${spring3}deg);`
+        */}
         {/* {to(
           [amount, mouseY],
           (amountNumber, mouseYNumber) => {
