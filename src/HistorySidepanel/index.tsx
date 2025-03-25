@@ -8,8 +8,8 @@ import {
   Text,
 } from "@radix-ui/themes";
 
-const HistorySidepanel = (props: CardProps & { onCloseClick: () => void }) => {
-  const { onCloseClick, ...rest } = props;
+const HistorySidepanel = (props: CardProps & { onCloseClick: () => void, onSongClick: (idx: number) => void }) => {
+  const { onCloseClick, onSongClick, ...rest } = props;
 
   return (
     <Card size="3" {...rest}>
@@ -31,8 +31,14 @@ const HistorySidepanel = (props: CardProps & { onCloseClick: () => void }) => {
       </Flex>
 
       <Flex direction="column" gap="4">
-        {songsHistory.map((song) => (
-          <Flex align="center" gap="3" key={song.name}>
+        {songsHistory.map((song, idx) => (
+          <Flex
+            align="center"
+            gap="3"
+            key={song.name}
+            style={{ cursor: 'pointer' }}
+            onClick={() => onSongClick(idx)}
+          >
             <Box asChild width="48px" height="48px">
               <img
                 src={song.cover}

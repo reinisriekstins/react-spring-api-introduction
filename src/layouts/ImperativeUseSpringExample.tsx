@@ -34,6 +34,7 @@ const ImperativeUseSpringExample = () => {
       >
         <HistorySidepanel
           onCloseClick={() => setSideMenuOpen(false)}
+          onSongClick={(idx: number) => api.start({ right: idx * 100 })}
         />
       </animated.div>
     </div>
