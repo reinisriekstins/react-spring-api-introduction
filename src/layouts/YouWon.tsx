@@ -65,7 +65,7 @@ const YouWon = () => {
 export default YouWon
 
 const useMouseMoveSpring = () => {
-  const [mouseSprings, api] = useSpring(() => ({ x: 0, y: 0 }))
+  const [mouseSprings, api] = useSpring(() => ({ x: 1, y: 1 }))
 
   useMove(
     ({ xy: [x, y] }) => {
