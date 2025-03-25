@@ -34,7 +34,7 @@ const YouWon = () => {
           #3. The consumed spring value can be not only style properties,
           but also any prop that accepts a numeric value and also "children".
         */}
-        {/* {amount} */}
+        {amount}
 
         {/*
           #4. To transform any numeric spring value and add any
