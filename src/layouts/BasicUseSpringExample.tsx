@@ -16,6 +16,7 @@ const BasicUseSpringExample = () => {
     // the right side, so we hide it 400 px farther than the 
     // right side of the page.
     right: sideMenuOpen ? 0 : -400,
+    // onChange: (evt) => console.log(evt.value),
   })
 
   return (
