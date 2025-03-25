@@ -8,7 +8,7 @@ import {
   Text,
 } from "@radix-ui/themes";
 
-const HistorySidepanel = (props: CardProps & { onCloseClick: () => void, onSongClick: (idx: number) => void }) => {
+const HistorySidepanel = (props: CardProps & { onCloseClick: () => void, onSongClick?: (idx: number) => void }) => {
   const { onCloseClick, onSongClick, ...rest } = props;
 
   return (
